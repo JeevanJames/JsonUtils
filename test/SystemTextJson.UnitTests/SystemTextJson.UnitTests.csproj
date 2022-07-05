@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>$(BaseNamespace).SystemTextJson.UnitTests</RootNamespace>
+        <AssemblyName>$(RootNamespace)</AssemblyName>
+        <DocumentationFile>Properties\$(AssemblyName).xml</DocumentationFile>
+        <Description>System.Text.Json extensions unit tests</Description>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="array.json" />
+      <None Remove="plain_number.json" />
+      <None Remove="plain_string.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="array.json" />
+        <EmbeddedResource Include="object.json" />
+        <EmbeddedResource Include="plain_number.json" />
+        <EmbeddedResource Include="plain_string.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Xunit.DataAttributes" Version="1.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\SystemTextJson\SystemTextJson.csproj" />
+    </ItemGroup>
+
+</Project>

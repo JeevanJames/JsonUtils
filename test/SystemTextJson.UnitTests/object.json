@@ -1,0 +1,8 @@
+{
+    "string": "A string value",
+    "integer": 50,
+    "double": 34.10,
+    "boolean": true,
+    "null": null,
+    "simpleArray": [1, 2, 3, 4]
+}

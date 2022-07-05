@@ -1,0 +1,10 @@
+<Project>
+
+    <PropertyGroup>
+        <BaseNamespace>Jeevan.JsonUtils</BaseNamespace>
+        <Product>JSON Utilities</Product>
+        <RepositoryName>JsonUtils</RepositoryName>
+        <CopyrightYears>2022</CopyrightYears>
+    </PropertyGroup>
+
+</Project>
